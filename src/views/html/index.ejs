@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("./include/head.ejs") %>
+<body>
+     <!---------------------------------------- HEADER ---------------------------------------------->    
+    <!-- tag to skip and screen reader's only -->
+    <!-- <a class="skip-link screen-reader-text" href="#content">Skip to content</a> -->
+
+    <header class="headline">
+        <div class="banner">
+<!-- ---------------------------------------- Hamburger menu --------------------------------------------->
+            <div class="banner-layout">
+                <%- include ("./include/nav.ejs") %>
+<!------------------------------------------ My SVG name(logo) ---------------------------------------------->
+                <%- include ("./include/logo.ejs") %>
+<!-- ------------------------------------------ language-bar -------------------------------------------- -->
+                <%- include ("./include/lang.ejs") %>
+            </div><!--banner layout(inline-box)-->
+            
+        </div><!--banner-->
+
+<!---------------------------------------- Marquee(havent finished) ---------------------------------------------->
+        <div class="sub-banner "><!----load-animation----->
+            <!-- make marquee here -->
+            <p class="intro">born in 1992, currently searching for a front-end job...</p>
+        </div>
+    </header>
+    <!-- script references -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/gsap.min.js"></script>
+</body>
+</html>

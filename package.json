@@ -1,0 +1,41 @@
+{
+  "name": "portfolio-backend",
+  "version": "1.0.0",
+  "description": "using node.js, express and mongodb to build the backend side of yu, chao's portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG=app & nodemon -r dotenv/config app.js babel-node -e js",
+    "dev": "nodemon -r dotenv/config app.js "
+  },
+  "author": "yu, chao",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "gsap": "^3.5.1",
+    "i18next": "^19.8.3",
+    "i18next-express-middleware": "^2.0.0",
+    "i18next-node-fs-backend": "^2.1.3",
+    "jquery": "^3.5.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.8",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "dotenv": "^8.2.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500"
+  },
+  "type": "module"
+}
