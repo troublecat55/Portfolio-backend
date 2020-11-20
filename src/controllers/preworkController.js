@@ -1,9 +1,11 @@
 import mongoose from 'mongoose';
-import {PreworkSchema} from '../models/preworkModel.js';
+import {WorkSchema} from '../models/workModel.js';
+import Debug from "debug";
+const debug = Debug("app");
 // const debug = require('debug')('app');
 
 //convert Schema into a Model 
-const Prework = mongoose.model('Prework', PreworkSchema);
+export const Prework = mongoose.model('Prework', WorkSchema);
 
 export const addNewPrework = async (req, res) => {
     let newPrework = new Prework(req.body);
@@ -51,7 +53,7 @@ export const updatePrework = async (req, res) => {
 
 export const deletePrework = async(req, res) => {
     try{
-        const prework = await Prework.remove({_id: req.params.preworksID});
+        const prework = await Prework.deleteMany({_id: req.params.preworksID});
         res.json({message: `successfully deleted ${req.params.preworksID}`});
     }
     catch(err) {

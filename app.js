@@ -1,42 +1,33 @@
+const {
+  SERVER_PORT,
+  DATABASE_URL
+} = process.env;
+
 import express from 'express';
 import chalk from 'chalk';
 import * as path from 'path';
 // import path from 'path';
 const __dirname = path.resolve();
 import mongoose from 'mongoose';
+
+import i18next from 'i18next';
+import expressMiddleware_i18next from'i18next-express-middleware';
+import Backend from 'i18next-node-mongo-backend';
+
 import bodyParser from'body-parser';
 import Debug from "debug";
 const debug = Debug("app");
 
+import preworkRoutes from './src/routes/preworkRoutes.js';
 
-
-// const preworkRouter = require('./src/routes/preworkRoutes');
-import preworkRoutes from './src/routes/preworkRoutes.js'
+import {addNewWholePrework} from './src/controllers/initTranslation.js'
 
 // if (process.env.NODE_ENV !== 'production') {
 //   require('dotenv').parse()
 // }
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-// import i18next from 'i18next';
-// import i18nextMiddleware from'i18next-express-middleware';
-// import Backend from 'i18next-node-fs-backend';
-
-// i18next
-// .use(Backend)
-// .use(i18nextMiddleware.LanguageDetector)
-// .init({
-//   backend: {
-//     loadPath: __dirname + '/src/locales/{{lng}}/{{ns}}.json',
-//   },
-//   detection: {
-//     order: ['querystring', 'cookie'],
-//     caches: ['cookie']
-//   },
-//   fallbackLng: 'en',
-//   preload: ['en', 'zh-TW']
-// });
+const PORT = SERVER_PORT || 3000;
 
 
 app.use(express.static(path.join(__dirname, '/public/')));
@@ -50,18 +41,24 @@ app.set('view engine', 'ejs');
 
  //mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
 
 const db = mongoose.connection
 db.on('error', error => console.error(error))
-db.once('open', () => debug('Connected to Mongoose'))
+db.once('open', () => {
+    debug('Connected to Mongoose');
+    // addNewWholePrework();<-----------need to add this back with condition
+})
+
 
 //body parser setup
 app.use(bodyParser.urlencoded({extended: false, limit:'10mb'}));
 app.use(bodyParser.json());
+
+//auto add json into mongodb
 
 //routes
 // app.use('/pre-works',  preworkRouter);
@@ -81,7 +78,7 @@ app.listen(PORT, () => {
 
 // "env": {
 //   "NODE_ENV": "development",
-//   "PORT": 4000,
+//   "SERVER_PORT": 4000,
 //   "DATABASE_URL": "mongodb://localhost/PORTFOLIOdb"
 // }
 

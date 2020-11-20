@@ -23,7 +23,7 @@ const DataSchema = new Schema({
     },
 });
 
-export const PreworkSchema = new Schema({
+export const WorkSchema = new Schema({
     lang: String,
     ns: String,
     data: [DataSchema]

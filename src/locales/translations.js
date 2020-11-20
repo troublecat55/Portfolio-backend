@@ -1,4 +1,4 @@
-module.exports = [
+export const preworkTranslations = [
     {
         lang: "en",
         ns: "translation",
