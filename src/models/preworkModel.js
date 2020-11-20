@@ -1,24 +1,30 @@
 import mongoose from 'mongoose';
 
-const Schema = mongoose.Schema;
+const {Schema} = mongoose;
 
 const DetailSchema = new Schema ({
     country: [String],
     company: String,
-    platform: [String],
-    language: [String],
     year: Date,
     
 })
 
-export const PreworkSchema = new Schema({
+const DataSchema = new Schema({
     title:  String,
     views:  String,
     discription: Array,
-    links: [String],
+    image: String,
+    language: [{lang: String, url: String}],
+    platform: [{name: String, url: String}],
     details:[DetailSchema],
     created_date: {
         type: Date,
         default: Date.now()
     },
 });
+
+export const PreworkSchema = new Schema({
+    lang: String,
+    ns: String,
+    data: [DataSchema]
+})

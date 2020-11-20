@@ -1,0 +1,119 @@
+[   
+    {
+        "title":  "Kunnen bedrijven de wereld veranderen? Het legende van Ashoka",
+        "views":  "10,000+",
+        "discription": ["Ik ondersteunde een seizoengebonden project als een content projector door een gespecialiseerde supporter zijn van het project samen met een Nederlandse bedrijf “Boehringer Ingelheim”."],
+        "image": "ashoka.png",
+        "language": {  
+            "zh-TW": "https://storystudio.tw/article/gushi/ashoka-and-bill-drayton/",
+            "en": "https://storystudio.tw/article/s_for_supplement/ashoka-and-bill-drayton-en/"
+        },
+        "platform":{
+            "Facebook":"https://bit.ly/3msMfbR",
+            "Gushi.tw":"https://storystudio.tw/article/s_for_supplement/ashoka-and-bill-drayton-en/"
+        },
+        "details":{
+            "country": ["Taiwan","The Nederlands"],
+            "company":"Gushi.tw(storystudio)",
+            "year": 2019
+        }
+
+    },
+    {
+        "title":  "De  \"Water ATM\" die het water probleem in Bangladesh oplost",
+        "views":  "20,000+",
+        "discription": ["Ik ondersteunde een seizoengebonden project als een content projector door een gespecialiseerde supporter zijn van het project samen met een Nederlandse bedrijf “Boehringer Ingelheim”. Het verhaal gaat over een drinkfontijn en zijn oprichter Minhaj Chowdhury."],
+        "image": "drinkwell.png",
+        "language": {
+            "zh-TW":"https://storystudio.tw/article/gushi/ashoka-drinkwell/",
+            "en":"https://storystudio.tw/article/s_for_supplement/ashoka-drinkwell-en/"},
+        "platform":{
+            "Facebook":"https://bit.ly/3kHt3qp",
+            "Gushi.tw":"https://storystudio.tw/article/s_for_supplement/ashoka-drinkwell-en/"
+        }, 
+        "details":{
+            "country": ["Taiwan","The Nederlands"],
+            "company": "Gushi.tw(storystudio)",
+            "year": 2019
+        }
+
+    },
+    {
+        "title":  "Taiwanese vrijwilliger NGO \"Handangel\"",
+        "views":  "130,000+",
+        "discription": ["De verhalen en beschrijving over een Taiwanese vrijwilligersorganisatie die een seksuele dienstverlening aan mensen met een handicap geven. Ook vergelijken zij de rechten voor mensen met een handicap tussen de Oost-Aziatische en de Nederlandse samenleving ."],
+        "image": "handangel.png",
+        "language": {
+            "cn":"https://mp.weixin.qq.com/s/scFvbMWuUWtj3iRfBJefDA?fbclid=IwAR0_4vCd8bm_m3NKRK7vGwuySsX67_rJOHugoh1fptGNO-UQEYCM6CDuyFY"
+        },
+        "platform": {
+            "Wechat":"https://mp.weixin.qq.com/s/scFvbMWuUWtj3iRfBJefDA?fbclid=IwAR0_4vCd8bm_m3NKRK7vGwuySsX67_rJOHugoh1fptGNO-UQEYCM6CDuyFY",
+            "Zhihu":"https://zhuanlan.zhihu.com/p/35066363"
+        },
+        
+        "details":{
+            "country": ["China"],
+            "company": "Ontheroadstore",
+            "year": 2018
+        }
+
+    },
+    {
+        "title":  "Rare verhalen over een hallucinerende vis",
+        "views":  "110,000+",
+        "discription": ["De verhalen over een hallucinerende vis"],
+        "image": "hallucinogenic-fish.png",
+        "language": {
+            "cn":"https://mp.weixin.qq.com/s/vnXthBxocOeAufW_TraOcA?fbclid=IwAR2cyl2zb67hOrmU-4vDXb9PWt7AupmqFcbDa3XEUDLuKrm23g8HvqN1ggo"
+        },
+        "platform": {
+            "Wechat":"https://mp.weixin.qq.com/s/vnXthBxocOeAufW_TraOcA?fbclid=IwAR2cyl2zb67hOrmU-4vDXb9PWt7AupmqFcbDa3XEUDLuKrm23g8HvqN1ggo",
+            "Zhihu":"https://zhuanlan.zhihu.com/p/35295224"
+        },
+        "details":{
+            "country": ["China"],
+            "company": "Ontheroadstore",
+            "year": 2018
+        }
+
+    },
+    {
+        "title":  "Hoe de Chinese mafia zaken doet met de Nederlandse samenleving",
+        "views":  "120,000+",
+        "discription": ["Verhalen over bekende Cantoneese mafia groepen (14K) , hun lidmaatschap regels en de geschiedenis in de Nederlandse samenleving. Presentatie van de driehoeksverhouding tussen de Taiwanese KTM-partij, de Taiwanese gangsterclub (Hong Men) en de Kantonese gangsterclub (14K)"],
+        "image": "14k.png",
+        "language": {
+            "cn":"https://zhuanlan.zhihu.com/p/36000403"
+        },
+        "platform": {
+            "Wechat":"https://mp.weixin.qq.com/s/kE2DaeBcONelcBvgEtsUKA",
+            "Zhihu":"https://zhuanlan.zhihu.com/p/36000403"
+        },
+        "details":{
+            "country": ["China"],
+            "company": "Ontheroadstore",
+            "year": 2018
+        }
+
+    },
+    {
+        "title":  "Rechtstreeks naar de bodem ── Mijn \"low-end\" leven en werk in Beijing",
+        "views":  "50,000+",
+        "discription": ["Verhalen over mijn leven toen ik net naar Beijing ging voor werk"],
+        "image": "low-end.png",
+        "language": {
+            "zh-TW":"https://crossing.cw.com.tw/index.php/article/9177"
+        },
+        "platform": {
+            "Facebook":"https://bit.ly/2TKp68d",
+            "crossing.cw.com.tw":"https://crossing.cw.com.tw/index.php/article/9177"
+        },
+        "details":{
+            "country": ["Taiwan"],
+            "company": "Crossing",
+            "year": 2017
+        }
+
+    }
+
+]
