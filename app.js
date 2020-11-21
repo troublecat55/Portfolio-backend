@@ -46,11 +46,11 @@ mongoose.connect(DATABASE_URL, {
     useUnifiedTopology: true
 });
 
-const db = mongoose.connection
-db.on('error', error => console.error(error))
-db.once('open', () => {
+const conn = mongoose.connection
+conn.on('error', error => console.error(error))
+conn.once('open', () => {
     debug('Connected to Mongoose');
-    // addNewWholePrework();<-----------need to add this back with condition
+    // addNewWholePrework() //<-----------need to add this back with condition
 })
 
 

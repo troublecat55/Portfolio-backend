@@ -5,7 +5,9 @@ const debug = Debug("app");
 // const debug = require('debug')('app');
 
 //convert Schema into a Model 
-export const Prework = mongoose.model('Prework', WorkSchema);
+//https://stackoverflow.com/questions/54878935/how-to-change-collection-name-in-mongoose-model
+//Mongoose#model(name, [schema], [collection], [skipInit])
+export const Prework = mongoose.model('Prework', WorkSchema, 'preworks');
 
 export const addNewPrework = async (req, res) => {
     let newPrework = new Prework(req.body);
