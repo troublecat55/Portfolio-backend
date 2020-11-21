@@ -19,7 +19,7 @@
     "i18next-express-middleware": "^2.0.0",
     "i18next-node-mongo-backend": "0.0.4",
     "jquery": "^3.5.1",
-    "mongodb": "^3.6.2",
+    "mongodb": "^3.3.3",
     "mongoose": "^5.10.9",
     "nodemon": "^2.0.4"
   },
