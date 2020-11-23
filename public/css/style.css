@@ -1,0 +1,1481 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Adamina&family=Amiri:wght@400;700&family=Merriweather:wght@700;900&family=Prata&family=Sorts+Mill+Goudy&family=Spectral:wght@200;400;500&family=Vidaloka&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+Font Family
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Variables
+--------------------------------------------------------------*/
+.loading {
+  background-color: black;
+  color: #F0FFF0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5rem;
+}
+
+.loading #loader {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  top: 30%;
+  z-index: 100;
+}
+
+/*--------------------------------------------------------------
+Banner section
+--------------------------------------------------------------*/
+.banner {
+  /****remember to set up break point after grid**/
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 101;
+  width: 23rem;
+}
+
+@media screen and (min-width: 576px) {
+  .banner {
+    width: 30rem;
+  }
+}
+
+.banner .banner-layout div {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.banner #logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 12rem;
+  animation: fill 1s ease-in 1s forwards;
+}
+
+@media screen and (min-width: 576px) {
+  .banner #logo {
+    max-width: 15.5rem;
+  }
+}
+
+.banner #sub-logo {
+  display: block;
+  margin-top: -2.5rem;
+  margin-bottom: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+}
+
+.banner a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.banner ul {
+  list-style: none;
+}
+
+@keyframes fill {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #161A1D;
+  }
+}
+
+/*--------------------------------------------------------------
+SVG text animation
+--------------------------------------------------------------*/
+#logo path:nth-child(2) {
+  stroke-dasharray: 493;
+  stroke-dashoffset: 493;
+  animation: line-anim 2s cubic-bezier(0, 0.67, 0.53, 1.05) forwards;
+  animation-delay: 0.005s;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 584;
+  stroke-dashoffset: 584;
+  animation: line-anim 2s cubic-bezier(0, 0.67, 0.53, 1.05) forwards;
+  animation-delay: 0.105s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 90.8;
+  stroke-dashoffset: 90.8;
+  animation: line-anim 2s cubic-bezier(0, 0.67, 0.53, 1.05) forwards;
+  animation-delay: 0.205s;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 505;
+  stroke-dashoffset: 505;
+  animation: line-anim 2s cubic-bezier(0, 0.67, 0.53, 1.05) forwards;
+  animation-delay: 0.305s;
+}
+
+#logo path:nth-child(6) {
+  stroke-dasharray: 733;
+  stroke-dashoffset: 733;
+  animation: line-anim 2s cubic-bezier(0, 0.67, 0.53, 1.05) forwards;
+  animation-delay: 0.405s;
+}
+
+#logo path:nth-child(7) {
+  stroke-dasharray: 569;
+  stroke-dashoffset: 569;
+  animation: line-anim 2s cubic-bezier(0, 0.67, 0.53, 1.05) forwards;
+  animation-delay: 0.505s;
+}
+
+#logo path:nth-child(8) {
+  stroke-dasharray: 586.6;
+  stroke-dashoffset: 586.6;
+  animation: line-anim 2s cubic-bezier(0, 0.67, 0.53, 1.05) forwards;
+  animation-delay: 0.605s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/******use when media query min-width is 767px (ipad)********/
+/*--------------------------------------------------------------
+Titel img and sunburst background
+--------------------------------------------------------------*/
+.title-img-area {
+  background: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: grid;
+  /****diaplay:block for mobile(display:grid for pc)*****/
+  /****size for whole title img area*****/
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .title-img-area {
+    max-height: 27rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 576px) {
+  .title-img-area {
+    max-height: 40rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 690px) {
+  .title-img-area {
+    max-height: 42rem;
+  }
+}
+
+@media screen and (min-width: 690px) and (max-width: 801px) {
+  .title-img-area {
+    max-height: 45rem;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1700px) {
+  .title-img-area {
+    max-height: 41rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .title-img-area {
+    max-height: 45rem;
+  }
+}
+
+.title-img-area #title-img,
+.title-img-area .sunburst {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.title-img-area #title-img {
+  /****my picture*****/
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  /****size for my picture*****/
+  width: 160%;
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+  .title-img-area #title-img {
+    max-width: 150%;
+    margin-left: -17%;
+    margin-top: -23%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 690px) {
+  .title-img-area #title-img {
+    max-width: 125%;
+    margin-top: -20%;
+    margin-left: -5%;
+  }
+}
+
+@media screen and (min-width: 690px) and (max-width: 801px) {
+  .title-img-area #title-img {
+    max-width: 120%;
+    margin-top: -20%;
+    margin-left: -3%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  .title-img-area #title-img {
+    margin-top: 1rem;
+    margin-left: -20%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  .title-img-area #title-img {
+    margin-top: -2rem;
+    margin-left: -20%;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  .title-img-area #title-img {
+    max-width: 140%;
+    margin-top: -3rem;
+    margin-left: -10%;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1700px) {
+  .title-img-area #title-img {
+    margin-top: -2rem;
+    margin-left: -22%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .title-img-area #title-img {
+    margin-top: -4rem;
+    margin-left: -22%;
+  }
+}
+
+.title-img-area .sunburst {
+  z-index: 0;
+}
+
+.title-img-area .sunburst #title-bg {
+  text-align: center;
+  margin-left: -15%;
+  width: 130%;
+  animation: rotate 4s linear 0.5s infinite;
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+  .title-img-area .sunburst #title-bg {
+    margin-top: -15%;
+    margin-left: -15%;
+    width: 130%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 690px) {
+  .title-img-area .sunburst #title-bg {
+    margin-top: -15%;
+    margin-left: -15%;
+    width: 130%;
+  }
+}
+
+@media screen and (min-width: 690px) and (max-width: 801px) {
+  .title-img-area .sunburst #title-bg {
+    margin-top: -10%;
+    margin-left: -5%;
+    width: 110%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .title-img-area .sunburst #title-bg {
+    margin-top: -30%;
+    margin-left: -75%;
+    width: 250%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .title-img-area .sunburst #title-bg {
+    margin-top: -30%;
+    margin-left: -50%;
+    width: 200%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-img-area .sunburst #title-bg {
+    margin-top: -30%;
+    margin-left: -50%;
+    width: 200%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .title-img-area .sunburst #title-bg {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+/*--------------------------------------------------------------
+Titel btns
+--------------------------------------------------------------*/
+.title-btn-area {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /******size and width for title-btn********/
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .title-btn-area {
+    margin-top: -6.5rem;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 576px) {
+  .title-btn-area {
+    margin-top: -8rem;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 690px) {
+  .title-btn-area {
+    margin-top: -13rem;
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 690px) and (max-width: 801px) {
+  .title-btn-area {
+    margin-top: -13.5rem;
+    width: 62%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .title-btn-area {
+    margin-top: 0rem;
+    padding-top: -1rem;
+    width: 100%;
+  }
+}
+
+.title-btn-area .title-btn {
+  opacity: 0;
+  animation: show 0.5s ease-in 0.4s forwards;
+  color: #161A1D;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  cursor: pointer;
+  background: #F5F3F4;
+  border: solid 2px #161A1D;
+  transition: all .25s ease-in-out;
+}
+
+.title-btn-area .title-btn:hover {
+  background: #161A1D;
+  color: #F5F3F4;
+}
+
+@media screen and (min-width: 0) and (max-width: 801px) {
+  .title-btn-area .title-btn {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+  .title-btn-area .title-btn {
+    animation: show 1s ease-in 1.2s forwards;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    padding: 1.1rem 0.1rem 1.1rem 0.1rem;
+    background: #161A1D;
+    color: #F5F3F4;
+  }
+  .title-btn-area .title-btn:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .title-btn-area .title-btn {
+    opacity: 0;
+    animation: show 1s ease-in 1s forwards;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1.5rem 0.1rem 1.5rem 0.1rem;
+    color: #F5F3F4;
+    margin-right: 10rem;
+    margin-top: 1.1rem;
+    background: #161A1D;
+    box-shadow: none;
+  }
+  .title-btn-area .title-btn:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+  .title-btn-area #upper-btn {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*--------------------------------------------------------------
+Sub-banner section(psudo element)
+--------------------------------------------------------------*/
+.sub-banner {
+  color: #161A1D;
+  display: inline-block;
+  position: relative;
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 801px) {
+  .sub-banner {
+    top: -1rem;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .sub-banner {
+    top: 0rem;
+  }
+}
+
+.sub-banner::before, .sub-banner::after {
+  content: " ";
+  position: absolute;
+  border-color: #161A1D transparent #161A1D transparent;
+  border-width: 1px;
+  border-style: solid;
+  height: 10%;
+  width: 100vw;
+  -ms-transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  transform: translateX(-200%);
+  animation: moveFromLeft 1s cubic-bezier(0.17, 0.67, 1, 0.54) forwards;
+  animation-delay: 1.5s;
+  opacity: 1;
+}
+
+.sub-banner::after {
+  top: 0.3rem;
+}
+
+.sub-banner::before {
+  top: 2rem;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translate3d(-200%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+    opacity: 1;
+  }
+}
+
+/*--------------------------------------------------------------
+Hamburger lines
+inspired by:https://www.youtube.com/watch?v=dIyVTjJAkLw&t=152s
+--------------------------------------------------------------*/
+.menu-btn {
+  cursor: pointer;
+  border: 2px solid #161A1D;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  margin-right: 0.7rem;
+  opacity: 0;
+  animation: show 1s ease-in 1.5s forwards;
+  transition: all 0.3 ease-in;
+  position: relative;
+  z-index: 10;
+  /***'X'animation***/
+}
+
+@media screen and (min-width: 576px) {
+  .menu-btn {
+    width: 4rem;
+    height: 4.2rem;
+    margin-bottom: 0.8rem;
+    margin-right: 1rem;
+  }
+}
+
+.menu-btn .menu-btn-hamburger {
+  width: 1.6rem;
+  height: 1.9px;
+  background: #161A1D;
+  transition: all .5s ease-in-out;
+  margin-top: 1.5rem;
+  margin-left: 0.05rem;
+}
+
+@media screen and (min-width: 576px) {
+  .menu-btn .menu-btn-hamburger {
+    margin-top: 1.75rem;
+  }
+}
+
+.menu-btn .menu-btn-hamburger::before,
+.menu-btn .menu-btn-hamburger::after {
+  position: absolute;
+  content: '';
+  width: 1.6rem;
+  height: 1.9px;
+  background: #161A1D;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn .menu-btn-hamburger::before {
+  -ms-transform: translate(-0.75rem, -0.6rem);
+  -webkit-transform: translate(-0.75rem, -0.6rem);
+  -o-transform: translate(-0.75rem, -0.6rem);
+  -moz-transform: translate(-0.75rem, -0.6rem);
+  transform: translate(-0.75rem, -0.6rem);
+}
+
+.menu-btn .menu-btn-hamburger::after {
+  -ms-transform: translate(-0.75rem, 0.6rem);
+  -webkit-transform: translate(-0.75rem, 0.6rem);
+  -o-transform: translate(-0.75rem, 0.6rem);
+  -moz-transform: translate(-0.75rem, 0.6rem);
+  transform: translate(-0.75rem, 0.6rem);
+}
+
+.menu-btn.expanded .menu-btn-hamburger {
+  background: transparent;
+  -ms-transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  transform: translateX(-50px);
+}
+
+.menu-btn.expanded .menu-btn-hamburger:before {
+  -ms-transform: rotate(-45deg) translate(28px, 28px);
+  -webkit-transform: rotate(-45deg) translate(28px, 28px);
+  -o-transform: rotate(-45deg) translate(28px, 28px);
+  -moz-transform: rotate(-45deg) translate(28px, 28px);
+  transform: rotate(-45deg) translate(28px, 28px);
+  background: #F5F3F4;
+}
+
+.menu-btn.expanded .menu-btn-hamburger::after {
+  -ms-transform: rotate(45deg) translate(28px, -28px);
+  -webkit-transform: rotate(45deg) translate(28px, -28px);
+  -o-transform: rotate(45deg) translate(28px, -28px);
+  -moz-transform: rotate(45deg) translate(28px, -28px);
+  transform: rotate(45deg) translate(28px, -28px);
+  background: #F5F3F4;
+}
+
+/*--------------------------------------------------------------
+Hamburger content
+inspired by:reference--https://www.youtube.com/watch?v=mEtmJ2xk16g&list=LLCqj0m-AE2sM6bPEVGSa2aw&index=46&t=1636s
+--------------------------------------------------------------*/
+.nav {
+  display: flex;
+}
+
+.nav .nav-links {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 10rem 2rem;
+  font-size: 2rem;
+  background: #161A1D;
+  color: #F5F3F4;
+  z-index: 8;
+  transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
+  clip-path: ellipse(200px 300px at top left);
+  opacity: 0;
+  /***hamburger content animation***/
+}
+
+.nav .nav-links .nav-item {
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  margin-top: 3rem;
+}
+
+.nav .nav-links .nav-item:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 576px) {
+  .nav .nav-links .nav-item {
+    margin-top: 5rem;
+  }
+}
+
+.nav.expanded .nav-links {
+  opacity: 1;
+  clip-path: ellipse(100% 100% at center);
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lang-btn {
+  cursor: pointer;
+  display: block;
+  border: 2px solid #161A1D;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 0.65rem;
+  opacity: 0;
+  animation: show 1s ease-in 1.5s forwards;
+  transition: all 0.25 ease-in-out;
+  margin-bottom: 1rem;
+  margin-left: 0.7rem;
+}
+
+@media screen and (min-width: 576px) {
+  .lang-btn {
+    width: 4rem;
+    height: 4.2rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    margin-left: 1rem;
+  }
+}
+
+.lang-btn .lang-links {
+  margin-left: -2.5rem;
+  margin-top: 0.4rem;
+}
+
+.lang-btn .lang-links .lang-item {
+  margin-top: 0.2rem;
+  transition: all .25s ease-in-out;
+}
+
+.lang-btn .lang-links .lang-item:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 576px) {
+  .lang-btn .lang-links .lang-item {
+    margin-top: 0.3rem;
+  }
+}
+
+.colophon {
+  position: relative;
+  z-index: 7;
+}
+
+.colophon .icons {
+  text-align: center;
+  padding: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  background: none;
+}
+
+.colophon .icons .icon-item {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.colophon #copyRight {
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+
+@supports (grid-area: auto) {
+  @media screen and (min-width: 801px) and (max-width: 1300px) {
+    .site {
+      max-width: none;
+      display: grid;
+      grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+      grid-template-rows: 0.1fr 2fr 5.5fr 1fr;
+    }
+    .headline {
+      grid-column: 1/5;
+      grid-row: 1/2;
+    }
+    .main-area {
+      grid-column: 1/5;
+      grid-row: 2/4;
+    }
+    .colophon {
+      grid-column: 2/4;
+      grid-row: 4/5;
+      z-index: 100;
+    }
+    /********main-area-subgrid($breakpoint-pc,1300px)********/
+    .main-area {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 0.05fr 1fr 0.1fr;
+      grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+      background: none;
+      grid-gap: none;
+    }
+    .home-img {
+      grid-column: 1/2;
+      grid-row: 1/5;
+    }
+    .home-button {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+    .sidetext-living {
+      display: none;
+    }
+    .sidetext-currentLearning {
+      display: none;
+    }
+    .current-ability {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+    .sidetext-advertising-marketer {
+      display: none;
+    }
+    /********currentLearning-subsubgrid********/
+    .currentLearning-content {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+    }
+    #upper-currentLearning {
+      grid-column: 1/2;
+    }
+    #bottom-currentLearning {
+      grid-column: 2/3;
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    .site {
+      max-width: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 2fr 6em;
+    }
+    .headline {
+      grid-column: 1/4;
+      grid-row: 1/2;
+    }
+    .main-area {
+      grid-column: 1/4;
+      grid-row: 2/4;
+    }
+    .colophon {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+    /********main-area-subgrid(1300px)********/
+    .main-area {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 0.1fr 0.4fr 0.6fr 0.4fr 0.4fr 0.1fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
+    }
+    .home-img {
+      grid-column: 1/2;
+      grid-row: 1/6;
+    }
+    .home-button {
+      grid-column: 5/7;
+      grid-row: 2/3;
+    }
+    .sidetext-living {
+      display: none;
+    }
+    .sidetext-currentLearning {
+      grid-column: 3/4;
+      grid-row: 2/4;
+    }
+    .current-ability {
+      grid-column: 5/7;
+      grid-row: 3/4;
+    }
+    .sidetext-advertising-marketer {
+      grid-column: 4/5;
+      grid-row: 2/4;
+    }
+    /********footer-subsubgrid********/
+    .colophon {
+      display: grid;
+      justify-content: center;
+      grid-template-rows: 9fr 1fr 1fr;
+    }
+    .colophon .icons {
+      grid-row: 2/3;
+    }
+    .colophon .copyRight {
+      grid-row: 3/4;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 801px) {
+  section[class^="sidetext-"],
+  .current-ability {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+  .current-ability {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  section[class^="sidetext-"] p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .current-ability {
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1700px) {
+  section[class^="sidetext-"] p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .current-ability {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  section[class^="sidetext-"] p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .current-ability {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  section[class^="sidetext-"]:not(.sidetext-advertising-marketer) {
+    background: none;
+  }
+  .living-content {
+    background: rgba(244, 144, 24, 0.3);
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    margin-top: 0;
+  }
+  .currentLearning-content {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+  .currentLearning-content p b {
+    font-size: 1.2rem;
+  }
+  .advertising-marketer p b {
+    font-size: 1.2rem;
+  }
+  .ad-marker-area {
+    padding: 0rem 5rem 0rem 1.5rem;
+  }
+  /*****sidetext-advertising-marketer*********/
+}
+
+@media screen and (min-width: 801px) {
+  /********current-ability**********/
+  @supports (display: flex) {
+    .current-ability ul {
+      display: flex;
+      justify-content: space-evenly;
+      border-top: 2px solid #161A1D;
+      border-bottom: 2px solid #161A1D;
+    }
+  }
+  .current-ability ul {
+    padding-left: 0;
+  }
+  .current-ability li {
+    background: #F5F3F4;
+    list-style-type: none;
+  }
+}
+
+/*****sidetext-advertising-marketer*********/
+.cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cards .card a {
+  text-decoration: none;
+  width: 100%;
+  transition: all .2s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 0) and (max-width: 801px) {
+  .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+  }
+  .works-title {
+    font-size: 1.5rem;
+  }
+  .card a {
+    color: #161A1D;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+  .works-title {
+    font-size: 2rem;
+  }
+  .card a {
+    color: #D3D3D3;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .works-title {
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+  }
+  .works-mark {
+    font-size: 0.9rem;
+    line-height: 0rem;
+  }
+  .card a {
+    color: #D3D3D3;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  /*****************************
+overlay image and text
+***********************************/
+  .card {
+    display: grid;
+    padding: 0;
+    text-align: center;
+  }
+  .card img,
+  .caption {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .wrapper figure {
+    position: relative;
+    overflow: hidden;
+  }
+  .wrapper figure img {
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.4s;
+  }
+  .wrapper figure:hover img {
+    transform: translateY(200px);
+  }
+  .wrapper figure:hover {
+    background: #F5F3F4;
+    border: 5px solid #161A1D;
+  }
+  .wrapper .caption:hover {
+    background: none;
+    color: #161A1D;
+  }
+  .caption {
+    z-index: 100;
+    padding: 1rem;
+    background: rgba(22, 26, 29, 0.6);
+  }
+}
+
+@supports (grid-area: auto) {
+  @media screen and (min-width: 801px) {
+    /****************************************
+            full page layout
+        ****************************************/
+    .works-site {
+      max-width: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr auto 6em;
+    }
+    .works-headline {
+      grid-column: 1/4;
+      grid-row: 1/2;
+    }
+    .works-main-area {
+      grid-column: 1/4;
+      grid-row: 2/3;
+    }
+    .works-colophon {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+  }
+  @media screen and (min-width: 801px) and (max-width: 1300px) {
+    /****************************************
+            grids layout all cards
+        ****************************************/
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    /****************************************
+            grids layout all cards
+        ****************************************/
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body, html {
+  font-family: "Spectral", serif;
+  font-size: 0.95rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F3F4;
+}
+
+.headline {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+.site {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 801px) {
+  max-width: 50rem;
+}

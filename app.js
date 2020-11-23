@@ -23,7 +23,7 @@ const debug = Debug("app");
 import preworkRoutes from './src/routes/preworkRoutes.js';
 
 import {addNewWholePrework} from './src/controllers/initTranslation.js'
-
+import {preworkTranslations} from './src/locales/translations.js';
 // if (process.env.NODE_ENV !== 'production') {
 //   require('dotenv').parse()
 // }
@@ -90,8 +90,27 @@ preworkRoutes(app);
 
 app.get('/', (req, res) => {
   debug(`Reqest from home received`);
-  res.render('index');
+  res.redirect('/title');
+  // res.render('index');//<-----------need to add this back with condition
   // res.sendFile(path.join(__dirname, 'views/index.html'));
+});
+
+app.get('/:title', function (req, res) {
+  res.type('html').send(
+    `
+    <p><b>Current language:</b> ${req.language}</p>
+    <p><b>Key:</b> ${req.params.title}</p>
+    <p><b>Translate:</b> ${req.t(req.params.title)}</p>
+   
+    <p><b>Change language:</b> ${preworkTranslations
+      .map(({ lang }) => `<a href="?lng=${lang}">${lang.toUpperCase()}</a>`)
+      .join('/')}</p>
+  `
+  );
+  console.log(preworkTranslations.map(({ data }) => `<p><span>${data.discription}</span></p>`))
+  console.log(req.t(req.params.title))
+  console.log(preworkTranslations.filter(x =>x.lang === req.language).map(x => `<p><span>${x.data.discription}</span></p>`))
+  //https://stackoverflow.com/questions/7364150/find-object-by-id-in-an-array-of-javascript-objects
 });
 
 app.listen(PORT, () => {
