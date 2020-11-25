@@ -20,13 +20,12 @@ import bodyParser from'body-parser';
 import Debug from "debug";
 const debug = Debug("app");
 
-import preworkRoutes from './src/routes/preworkRoutes.js';
+// import preworkRoutes from './src/routes/preworkRoutes.js';
 
-import {addNewWholePrework} from './src/controllers/initTranslation.js'
-import {preworkTranslations} from './src/locales/translations.js';
-// if (process.env.NODE_ENV !== 'production') {
-//   require('dotenv').parse()
-// }
+// import {addNewWholePrework} from './src/controllers/initTranslation.js'
+// import {preworkTranslations} from './src/locales/preworks/translations.js';
+import {addNewWholeHome} from './src/controllers/initTranslation.js';
+import {homeTranslations} from './src/locales/home/translations.js';
 
 const app = express();
 const PORT = SERVER_PORT || 3000;
@@ -44,7 +43,7 @@ app.set('view engine', 'ejs');
 mongoose.Promise = global.Promise;
 mongoose.connect(DATABASE_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 });
 
 const conn = mongoose.connection
@@ -52,7 +51,8 @@ conn.on('error', error => console.error(error))
 conn.once('open', () => {
     debug('Connected to Mongoose');
     //auto add json into mongodb
-    // addNewWholePrework() //<-----------need to add this back with condition
+    //addNewWholePrework() //<-----------need to add this back with condition
+    //addNewWholeHome();
 })
 
 
@@ -86,30 +86,48 @@ app.use(
 
 //routes
 // app.use('/pre-works',  preworkRouter);
-preworkRoutes(app);
+// preworkRoutes(app);
 
 app.get('/', (req, res) => {
   debug(`Reqest from home received`);
-  res.redirect('/title');
+  res.redirect('/subBanner');
   // res.render('index');//<-----------need to add this back with condition
   // res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 
-app.get('/:title', function (req, res) {
+app.get('/:subBanner', function (req, res) {
+  
   res.type('html').send(
     `
     <p><b>Current language:</b> ${req.language}</p>
-    <p><b>Key:</b> ${req.params.title}</p>
-    <p><b>Translate:</b> ${req.t(req.params.title)}</p>
-   
-    <p><b>Change language:</b> ${preworkTranslations
+    <p><b>Key:</b> ${req.params.subBanner}</p>
+    <p><b>Translate:</b> ${req.t(req.params.subBanner)}</p>
+
+    <p><b>upperbtn:</b> ${homeTranslations
+      .filter((object)=>object.lang === req.language)
+      .map((object) => (object.data.upperBtn) )}</p>
+    <p><b>bottombtn:</b> ${homeTranslations
+      .filter((object)=>object.lang === req.language)
+      .map((object) => (object.data.bottomBtn) )}</p>
+    <p><b>currentLearning:</b> ${homeTranslations
+        .filter((object)=>object.lang === req.language)
+        .map((object) => (object.data.currentLearning).join('') )
+        }</p>
+    <p><b>currentLearning:</b> ${homeTranslations
+      .filter((object)=>object.lang === req.language)
+      .map((object) => (object.data.advertisingMarketer).join('') )
+      }</p>
+    
+    <p><b>Change language:</b> ${homeTranslations
       .map(({ lang }) => `<a href="?lng=${lang}">${lang.toUpperCase()}</a>`)
       .join('/')}</p>
   `
   );
-  console.log(preworkTranslations.map(({ data }) => `<p><span>${data.discription}</span></p>`))
-  console.log(req.t(req.params.title))
-  console.log(preworkTranslations.filter(x =>x.lang === req.language).map(x => `<p><span>${x.data.discription}</span></p>`))
+  // homeTranslations.filter((object)=>object.lang === req.language).map((object) => console.log(object) )
+  
+  // homeTranslations.map(({ data }) => console.log(data) )
+  // preworkTranslations.map(({ data }) => data.forEach(x =>req.params.x.title) )
+  
   //https://stackoverflow.com/questions/7364150/find-object-by-id-in-an-array-of-javascript-objects
 });
 
