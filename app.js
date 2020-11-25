@@ -66,7 +66,7 @@ i18next
 .use(expressMiddleware_i18next.LanguageDetector)
 .use(Backend)
 .init({
-  fallbackLng: 'en',
+  fallbackLng: 'en-US',
   backend: {
     uri:DATABASE_URI,
     dbName: DB_NAME,
@@ -91,12 +91,15 @@ app.use(
 app.get('/', (req, res) => {
   debug(`Reqest from home received`);
   res.redirect('/subBanner');
-  // res.render('index');//<-----------need to add this back with condition
+  // res.render('index');
+  //<-----------need to add this back with condition
   // res.sendFile(path.join(__dirname, 'views/index.html'));
 });
+// app.get('/:subBanner', function (req, res) {
+//   res.render('index');
+// })
 
 app.get('/:subBanner', function (req, res) {
-  
   res.type('html').send(
     `
     <p><b>Current language:</b> ${req.language}</p>
@@ -128,7 +131,7 @@ app.get('/:subBanner', function (req, res) {
   // homeTranslations.map(({ data }) => console.log(data) )
   // preworkTranslations.map(({ data }) => data.forEach(x =>req.params.x.title) )
   
-  //https://stackoverflow.com/questions/7364150/find-object-by-id-in-an-array-of-javascript-objects
+ // https://stackoverflow.com/questions/7364150/find-object-by-id-in-an-array-of-javascript-objects
 });
 
 app.listen(PORT, () => {

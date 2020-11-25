@@ -1,6 +1,6 @@
 export const homeTranslations = [
     {
-        lang: "en",
+        lang: "en-US",
         ns: "translation",
         data:{
             subBanner:"born in 1992, currently searching for a front-end job...",
