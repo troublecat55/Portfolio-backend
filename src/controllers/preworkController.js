@@ -33,7 +33,7 @@ export const getPrework = async (req, res) => {
 
 export const getPreworkWithId =  async (req, res) => {
     try{
-        const prework = await Prework.find({});
+        const prework = await Prework.findById(req.params.preworksID);
         res.json(prework);
     }
     catch(err) {
