@@ -3,11 +3,9 @@ The backend part of my personal RWD website. Using Node.js, express.js, ejs, mon
 
 ## Features 
 * Self build RESTful API
+* I18next-mongodb for internationalization for HOME-Page
 * mongoose for database modeling
 * Using .ENV file to improve security
-* Plan to use i18n for internalization
-
-## Progress:1/5 finished
 
 ###### Finished-Part
 * RESTful API with Node.js and express.js
