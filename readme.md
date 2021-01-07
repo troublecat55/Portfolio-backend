@@ -7,13 +7,6 @@ The backend part of my personal RWD website. Using Node.js, express.js, ejs, mon
 * mongoose for database modeling
 * Using .ENV file to improve security
 
-###### Finished-Part
-* RESTful API with Node.js and express.js
-
-###### Under-Construction
-* i18n connection with mongodb
-* still need to host my [Portfolio-Frontend](https://github.com/troublecat55/portfolio-frontend.git) pages
-
 
 ## Setup
 0. Install [Node.js](https://nodejs.org/en/download/)
